@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 import { Qoute } from "../qoute";
 @Component({
   selector: 'app-qoute-detail',
@@ -6,7 +6,7 @@ import { Qoute } from "../qoute";
   styleUrls: ['./qoute-detail.component.css']
 })
 export class QouteDetailComponent implements OnInit {
-
+@Input() qoute:Qoute;
   constructor() { }
 
   ngOnInit(): void {

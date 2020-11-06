@@ -1,10 +1,10 @@
 <div class="cointainer-fluid">
 <h1 class="text-center">Daily Qoutes</h1>
 <ul>
-    <li *ngfor = "let qoute ofqoutes">
-     {{qoute.name}}
-     
-    <app-qoute-detai (qoute)="qoute"></app-qoute-detail>
-    </li>
+    <div *ngfor = "let qoute ofqoutes: let i =index">
+     <li>{{qoute.name}}</li>
+     <button(click)=toggleDetail(i)></button>
+    <li><app-qoute-detai   **ngIf="qoute.showDescription"(qoute)="qoute"></app-qoute-detail></li>
+    </div>
 </ul>
 </div>
