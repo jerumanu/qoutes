@@ -1,3 +1,10 @@
 <div class="cointainer-fluid">
 <h1 class="text-center">Daily Qoutes</h1>
+<ul>
+    <li *ngfor = "let qoute ofqoutes">
+     {{qoute.name}}
+     
+    <app-qoute-detai (qoute)="qoute"></app-qoute-detail>
+    </li>
+</ul>
 </div>
