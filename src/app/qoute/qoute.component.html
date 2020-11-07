@@ -2,7 +2,9 @@
 <h1 class="text-center">Daily Qoutes</h1>
 <ul>
     <div *ngFor = "let qoute of qoutes;let i =index">
+        <li>{{qoute.type}}</li>
      <li>{{qoute.name}}</li>
+
      <button (click)=toggleDetail(i)>Qoutes</button>
     <app-qoute-detail   *ngIf="qoute.showDescription"[qoute]="qoute"> </app-qoute-detail>
     </div>
