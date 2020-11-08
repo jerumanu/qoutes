@@ -8,13 +8,13 @@
         <li>{{qoute.type}} due on {{qoute.completeDate|date}} </li>
      
 
-     <button (click)=toggleDetail(i)>Qoutes</button>
+     <button (click)=toggleDetail(i) class="btn btn-success">Qoutes</button>
     <app-qoute-detail   *ngIf="qoute.showDescription"[qoute]="qoute" (isComplete) = "deleteQoute($event,i)"> </app-qoute-detail>
     </div>
 </ul>
 </div>
 <div class="col-md-6">
-    <app-qoute-form></app-qoute-form>
+    <app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form>
 </div>
 </div>
 
