@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { QouteComponent } from './qoute/qoute.component';
 import { QouteDetailComponent } from './qoute-detail/qoute-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     QouteComponent,
-    QouteDetailComponent
+    QouteDetailComponent,
+  
+  
   ],
   imports: [
     BrowserModule,

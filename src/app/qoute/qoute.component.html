@@ -2,11 +2,12 @@
 <h1 class="text-center">Daily Qoutes</h1>
 <ul>
     <div *ngFor = "let qoute of qoutes;let i =index">
-        <li>{{qoute.type}}</li>
-     <li>{{qoute.name}}</li>
+
+        <li>{{qoute.type}} due on {{qoute.completeDate|date}} </li>
+     
 
      <button (click)=toggleDetail(i)>Qoutes</button>
-    <app-qoute-detail   *ngIf="qoute.showDescription"[qoute]="qoute"> </app-qoute-detail>
+    <app-qoute-detail   *ngIf="qoute.showDescription"[qoute]="qoute" (isComplete) = "deleteQoute($event,i)"> </app-qoute-detail>
     </div>
 </ul>
 <p *ngIf="qoutes.length > 5">Your  have too many Qoutes </p>
