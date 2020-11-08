@@ -11,6 +11,14 @@ export class QouteDetailComponent implements OnInit {
 qouteDelete(complete:boolean){
   this.isComplete.emit(complete);
 }
+numberofupvotes:number=0
+upvoteclick(){
+  this.numberofupvotes++;
+}
+numberofdownvotes:number = 0
+downvoteclick(){
+  this.numberofdownvotes ++;
+}
   constructor() { }
 
   ngOnInit(): void {

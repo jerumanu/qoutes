@@ -21,7 +21,12 @@ addNewQoute(qoute){
  qoute.completeDate = new Date(qoute.completeDate)
   this.qoutes.push(qoute)
 }
-
+likes (index){
+this.qoutes[index].like++;
+}
+dislikes(index){
+this.qoutes[index].dislike++;
+}
 
 toggleDetail(index){
   this.qoutes[index].showDescription= !this.qoutes[index].showDescription;

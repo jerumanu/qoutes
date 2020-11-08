@@ -1,5 +1,9 @@
 <p>{{qoute.name}} </p>
 <p>{{qoute.description}}</p>
-
+<p>downvotes: {{numberofdownvotes}}</p>
+<p>upvotes: {{numberofupvotes}}</p>
  <P>This qoutes will be completed on {{qoute.completeDate|date}} date</P> 
- <button (click)= "qouteDelete(true)" class="btn btn-danger">Delete Qoute</button>
+ 
+ <button (click)=upvoteclick() class="btn btn-success" ><i class="fas fa-thumbs-up fa-2px"></i> </button>
+ <button (click)=downvoteclick()  class="btn btn-success"  class="btn btn-success" > <i class="fas fa-thumbs-down fa-2px"></i></button>
+ <button (click)= "qouteDelete(true)" class="btn btn-danger"><i class="fa fa-trash fa-2px"></i> </button>
