@@ -15,6 +15,13 @@ qoutes :Qoute[] =[
 
   
 ]
+addNewQoute(qoute){
+  let qouteLength = this.qoutes.length;
+  qoute.type = qouteLength+1;
+  
+  qoute.completeDate = new Date(qoute.completeDate)
+  this.qoutes.push(qoute)
+}
 
 
 toggleDetail(index){

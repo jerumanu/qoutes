@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h2 class="text-center">Create a new Qoutes</h2>
     <hr>
-    <form #qouteForm='ngForm'>
+    <form  (ngSubmit)='submitGoal() #qouteForm='ngForm'>
         <div class="form-group">
             <label for="type">Type of Qute</label>
             <input type="text" required class="form-control" id="type"[(ngModel)]="newQoute.type" type="type" #type='ngModel'>
