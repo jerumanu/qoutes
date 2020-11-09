@@ -8,6 +8,7 @@ import { DateCountPipe } from './date-count.pipe';
 import { QouteDetailComponent } from './qoute-detail/qoute-detail.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { FormsModule } from '@angular/forms';
+import { HighvotesDirective } from './highvotes.directive';
 
 
 
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     QouteDetailComponent,
     QouteFormComponent,
     DateCountPipe,
+    HighvotesDirective,
 
   
   
