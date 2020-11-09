@@ -1,27 +1,24 @@
-# Qoute
+# Daily Qoute
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This project allow ussers to read and add new qoutes withs its authors and date adde ,it  was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.0.
 
-## Development server
+## Aouthor
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Emmanuel cheriyot koech
 
-## Code scaffolding
+## project Set up Instructions
+*Ctrl + alt + t to open the terminal
+*now git clone https://github.com/jerumanu/qoutes.git
+*cd Qoute
+*you can use code . to open it.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Technologies Used
+*Angular js
+*Git and Github
+##Support and contact details
+I would like to give credit to my Technical mentor for the guidance she gave me towards the development of this web
 
-## Build
+##License
+Licensed under the MIT license Copyright (c) [2020] (Emmanuel cheruyot)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
